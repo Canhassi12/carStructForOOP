@@ -9,11 +9,11 @@ using namespace std;
 class Car
 {
     private:
-        string color;
-        string prefix;
-        string model;
-        int    age;
-        double value;
+        string color = "indefine";
+        string prefix = "indefine";
+        string model = "indefine";
+        int age = 0;
+        double value = 0;
 
     public:
         Car(string color, string prefix, string model, int age, double value)
@@ -24,7 +24,10 @@ class Car
             this->age    = age;
             this->value  = value;
         }
-
+        Car()
+        {
+           
+        }
      
                 
         string getColor()
